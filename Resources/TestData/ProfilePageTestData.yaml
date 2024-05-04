@@ -1,0 +1,25 @@
+Organization : Ernst&Young
+TeamName : Microservices FrontEnd
+Role : QA Automation
+LoggedInSince : March 19 2023
+AboutMeSuccessMessage : Profile updated successfully.
+MyAreasOfInterestSuccessMessage : Profile updated successfully.
+MyAreasOfInterestTitle : My Areas of Interest
+ContributionTitle : My contributions
+ContributionDescription :  EY MicroApps Platform welcomes community driven efforts to adopt microfrontends across service lines and product team within EY.  
+InReviewRGBCode : rgb(237, 101, 0)
+DraftRGBCode :    rgb(255, 255, 255)
+SubmittedRGBCode :   rgba(0, 0, 0, 0)
+ApprovedRGBCode :    rgb(87, 225, 136)
+ContributionNameHeader : Contribution Name
+ContributionDescriptionHeader : Description
+ContributionSubmissionDateHeader : Date of Submission
+ContributionStateHeader : Current State
+MyViewedItemsTitle : My Viewed Items
+CatalogItemTitle : Catalog Item
+AreaOfInterestTitle : Areas of Interest
+DescriptionTitle : Description
+MyFavoritesTitle : My Favorites
+BookmarkRGBCode : rgb(255, 230, 0)
+AboutMeText : About Me
+

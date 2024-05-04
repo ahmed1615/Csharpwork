@@ -1,0 +1,30 @@
+PostmanSampleClientURL: "https://postman-echo.com/"
+ReqresSampleClientURL: "https://reqres.in/"
+GetEndpoint: "get?customer_id=6"
+CreateEndpoint: "api/users"
+PostEndpoint: post
+UpdateEndpoint:  "api/users/2"
+DeleteEndpoint:  "api/users/2"
+LoginEndpoint: "/api/login"
+UserName: eve.holt@reqres.in
+Password: cityslicka
+SerDeserEndpoint : "api/unknown/2"
+NameValidation : fuchsia rose
+URLValidation : "https://reqres.in/#support-heading"
+JSONResponse : |
+    {
+    "data": {
+        "id": 2,
+        "name": "fuchsia rose",
+        "year": 2001,
+        "color": "#C74375",
+        "pantone_value": "17-2031"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+    }   
+
+
+

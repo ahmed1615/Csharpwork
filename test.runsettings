@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="browser" />
+	<Parameter name="headless" />
+	<Parameter name="incognito" />
+	<Parameter name="pageTimeout" />
+	<Parameter name="implicitTimeout" />
+	<Parameter name="scriptTimeout" />
+	<Parameter name="url" />
+  </TestRunParameters>
+</RunSettings>

@@ -1,0 +1,43 @@
+CatalogList:
+- Login
+- Search
+- Left Hand Navigation
+FoundationList:
+- Colors
+- Icons
+- Layout
+- Typography
+DesignPatternsList:
+- Accordion
+- Avatars
+- Breadcrumb
+- Buttons
+- Check Boxes
+- Data Tables
+- Date Picker
+- Dropdowns
+- File Uploader
+- Global Header
+- Inputs
+- Messaging & Alerts
+- Modals
+- Navigation & Menus
+- Pagination
+- Progress Bar
+- Radio Buttons
+- Search
+- Slider
+- Status Indicators
+- Toggles
+-  Tool Tips
+FrameworkLibrariesList:
+- Angular:NG-Motif
+- React:Motif-React
+GuidelinesList: 
+- Accessibility
+- Content
+- Power BI
+- UI Automation
+- Usability Testing
+
+

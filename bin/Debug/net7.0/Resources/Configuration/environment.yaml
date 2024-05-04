@@ -1,0 +1,15 @@
+Webdriver:
+    Browser: edge
+    IsHeadless: false
+    IsIncognito: false
+    IsElementHighlightActive: true
+    Type: auto
+    DriverVersion: 113.0.5672.63
+    OS: windows
+Environment:
+    Name: dev
+    URL: https://uksddsc03hsta02.z33.web.core.windows.net
+Timeouts:
+    ImplicitWaitTimeoutInSeconds: 30
+    PageTimeoutInSeconds: 50
+    AsynchronousJavaScriptTimeoutInSeconds: 50
