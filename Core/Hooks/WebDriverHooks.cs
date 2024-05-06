@@ -122,7 +122,7 @@ namespace MicroappPlatformQaAutomation.Core.Hooks
             if (featureContext.FeatureInfo.Title != "API Testing")
             {
                 var webDriver = _objectContainer.Resolve<EventFiringWebDriver>();
-                webDriver.Quit();
+               // webDriver.Quit();
             }
 
         }

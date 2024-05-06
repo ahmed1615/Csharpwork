@@ -61,5 +61,6 @@ namespace MicroappPlatformQaAutomation.Core.Commons
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(timeoutInSeconds));
             wait.Until(e => element);
         }
+      
     }
 }

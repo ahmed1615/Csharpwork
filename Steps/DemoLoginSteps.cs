@@ -70,6 +70,7 @@ namespace MicroappPlatformQaAutomation.Steps
             String logoText = _LoginDemo.logo.Text;
 
             Assert.AreEqual(LOGOTEXT, logoText);
+ 
 
         }
     }
