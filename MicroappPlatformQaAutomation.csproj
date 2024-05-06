@@ -15,7 +15,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <UpToDateCheckInput Remove="features\LandingScreen.feature" />
-	  <UpToDateCheckInput Remove="features\test.feature" />
 	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
@@ -73,6 +72,9 @@
     <None Update="Resources\TestData\SearchTestData.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+	  <None Update="Resources\TestData\DemoTestData.yaml">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
     <None Update="Resources\TestData\LoginTestData.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

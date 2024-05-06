@@ -163,3 +163,5 @@ C:\Users\Ahmed\Downloads\microapp-platform-qa-automation\obj\Debug\net7.0\refint
 C:\Users\Ahmed\Downloads\microapp-platform-qa-automation\obj\Debug\net7.0\MicroappPlatformQaAutomation.pdb
 C:\Users\Ahmed\Downloads\microapp-platform-qa-automation\obj\Debug\net7.0\MicroappPlatformQaAutomation.genruntimeconfig.cache
 C:\Users\Ahmed\Downloads\microapp-platform-qa-automation\obj\Debug\net7.0\ref\MicroappPlatformQaAutomation.dll
+C:\Users\Ahmed\Downloads\microapp-platform-qa-automation\obj\Debug\net7.0\MicroappPlatformQaAutomation.sourcelink.json
+C:\Users\Ahmed\Downloads\microapp-platform-qa-automation\bin\Debug\net7.0\Resources\TestData\DemoTestData.yaml

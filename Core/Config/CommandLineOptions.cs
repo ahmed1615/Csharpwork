@@ -21,5 +21,6 @@
         public int? AsynchronousJavaScriptTimeoutInSeconds { get; set; }
 
         public string URL { get; set; }
+        public string URLDEMO { get; set; }
     }
 }

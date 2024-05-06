@@ -17,6 +17,7 @@ namespace MicroappPlatformQaAutomation.Core.Config
         public const string IMPLICIT_TIMEOUT_PARAMETER = "implicitTimeout";
         public const string SCRIPT_TIMEOUT_PARAMETER = "scriptTimeout";
         public const string URL_PARAMETER = "url";
+        public const string URLDEMO_PARAMETER = "urldemo";
 
         public const string yamlConfigurationFilePath = "Resources/Configuration/environment.yaml";
 
