@@ -17,10 +17,11 @@ namespace MicroappPlatformQaAutomation
     [Binding]
     internal class InternalUserProfilePageSteps
     {
-        private readonly EventFiringWebDriver _driver;
+        
         private readonly static string yamlProfilePageTestDataFilePath = "Resources/TestData/ProfilePageTestData.yaml";
         private readonly ExplicitWait _explicitWait;
         private readonly JsExecutor _jsExecutor;
+        private readonly EventFiringWebDriver _driver;
         private readonly InternalUserProfilePage _internalUserProfilePage;
 
         public InternalUserProfilePageSteps(EventFiringWebDriver webDriver, InternalUserProfilePage internalUserProfilePage, ExplicitWait explicitWait, JsExecutor jsExecutor)

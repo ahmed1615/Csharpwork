@@ -30,6 +30,16 @@ namespace MicroappPlatformQaAutomation.Pages
         public IWebElement contuineButton => _driver.FindElement(By.Id("continue"));
         public IWebElement finishButton => _driver.FindElement(By.Id("finish"));
         public IWebElement sucussMessage => _driver.FindElement(By.TagName("h2"));
+        public IWebElement Backtohome => _driver.FindElement(By.Id("back-to-products"));
+        public IWebElement burgerMenu => _driver.FindElement(By.Id("react-burger-menu-btn"));
+        public IWebElement allItems => _driver.FindElement(By.Id("inventory_sidebar_link"));
+        public IWebElement about => _driver.FindElement(By.Id("about_sidebar_link"));
+        public IWebElement logOut => _driver.FindElement(By.Id("logout_sidebar_link"));
+        public IWebElement restAppStore => _driver.FindElement(By.Id("reset_sidebar_link"));
+
+
+
+
 
 
 

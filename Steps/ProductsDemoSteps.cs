@@ -5,6 +5,8 @@ using MicroappPlatformQaAutomation.Pages;
 using MicroappPlatformQaAutomation.Resources.TestData;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.Events;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections;
@@ -23,9 +25,11 @@ namespace MicroappPlatformQaAutomation.Steps
         private readonly ExplicitWait _explicitWait;
         private readonly ProductsDemoPage _products;
         private readonly Selectelementby _select;
+        private readonly EventFiringWebDriver _driver;
         public string priceofunit;
-        public ProductsDemoSteps(ProductsDemoPage productsDemo, ExplicitWait explicitWait, Selectelementby select)
+        public ProductsDemoSteps(EventFiringWebDriver webDriver, ProductsDemoPage productsDemo, ExplicitWait explicitWait, Selectelementby select)
         {
+            _driver = webDriver;
             _products = productsDemo;
             _explicitWait = explicitWait;
             _select = select;
@@ -107,7 +111,31 @@ namespace MicroappPlatformQaAutomation.Steps
             String message = _products.sucussMessage.Text;
             Assert.AreEqual(message, "Thank you for your order!");
         }
+        [When(@"the user wants to back to home")]
+        public void the_userwants_to_back_to_home()
+        {
+            try
+            {
+                _products.Backtohome.Click();
+            }
+            catch (StaleElementReferenceException e) { }
+        }
+        [When(@"the user open the hamburger menu")]
+        public void the_user_open_the_hamburger_menu()
+        {
+            _products.burgerMenu.Click();
+           
+        }
+        [When(@"the user over all list")]
+        public void the_user_over_all_list()
+        {
+            Actions actions = new Actions(_driver);
+            actions.MoveToElement(_products.allItems).Perform();
+            actions.MoveToElement(_products.about).Perform();
+            actions.MoveToElement(_products.logOut).Perform();
+            actions.MoveToElement(_products.restAppStore).Perform();
 
+        }
     }
 }
    
