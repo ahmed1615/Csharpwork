@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroappPlatformQaAutomation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecf3d2d118a8ca2c0bed4077e10cd09a4ac1cc02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+516f7e9859cf7bd70a8546a09246a71e5cdc3631")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroappPlatformQaAutomation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroappPlatformQaAutomation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

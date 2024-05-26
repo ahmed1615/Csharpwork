@@ -70,6 +70,10 @@ namespace MicroappPlatformQaAutomation.Core.Config
             {
                 configuration.Environment.URL = TestContext.Parameters.Get(URL_PARAMETER);
             }
+            if (!string.IsNullOrWhiteSpace(TestContext.Parameters.Get(URLDEMO_PARAMETER)))
+            {
+                configuration.Environment.URLDEMO = TestContext.Parameters.Get(URLDEMO_PARAMETER);
+            }
 
             if (!string.IsNullOrWhiteSpace(TestContext.Parameters.Get(TYPE_PARAMETER)))
             {

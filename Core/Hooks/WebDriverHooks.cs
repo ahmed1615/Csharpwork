@@ -55,11 +55,22 @@ namespace MicroappPlatformQaAutomation.Core.Hooks
                 _objectContainer.RegisterInstanceAs<ExplicitWait>(explicitWait);
                 _objectContainer.RegisterInstanceAs<JsExecutor>(jsExecutor);
                 Console.WriteLine("Printing url: ");
-                Console.WriteLine(ConfigurationReader.GetTestConfiguration().Environment.URL);
-                webDriver.Navigate().GoToUrl(ConfigurationReader.GetTestConfiguration().Environment.URL);
-                webDriver.Manage().Window.Maximize();
-                //webDriver.Manage().Window.Size = new Size(1366, 768);
-                // webDriver.Manage().Window.Size = new Size(1920, 1080);
+                if (ConfigurationReader.GetTestConfiguration().Environment.Name == "dev")
+                {
+                    Console.WriteLine(ConfigurationReader.GetTestConfiguration().Environment.URLDEMO);
+                    webDriver.Navigate().GoToUrl(ConfigurationReader.GetTestConfiguration().Environment.URLDEMO);
+                    webDriver.Manage().Window.Maximize();
+                    //webDriver.Manage().Window.Size = new Size(1366, 768);
+                    // webDriver.Manage().Window.Size = new Size(1920, 1080);
+                }
+                else if (ConfigurationReader.GetTestConfiguration().Environment.Name == "qa")
+                {
+                    Console.WriteLine(ConfigurationReader.GetTestConfiguration().Environment.URL);
+                    webDriver.Navigate().GoToUrl(ConfigurationReader.GetTestConfiguration().Environment.URL);
+                    webDriver.Manage().Window.Maximize();
+                    //webDriver.Manage().Window.Size = new Size(1366, 768);
+                    // webDriver.Manage().Window.Size = new Size(1920, 1080);
+                }
             }
             else
             {

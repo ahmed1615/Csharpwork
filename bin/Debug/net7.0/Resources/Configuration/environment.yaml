@@ -7,9 +7,9 @@ Webdriver:
     DriverVersion: 113.0.5672.63
     OS: windows
 Environment:
-    Name: dev
-   # URL:https://uksddsc03hsta02.z33.web.core.windows.net
-    URL: https://www.saucedemo.com/
+    Name: qa
+    URL: https://uksddsc03hsta02.z33.web.core.windows.net
+    URLDEMO: https://www.saucedemo.com/
 Timeouts:
     ImplicitWaitTimeoutInSeconds: 30
     PageTimeoutInSeconds: 50
