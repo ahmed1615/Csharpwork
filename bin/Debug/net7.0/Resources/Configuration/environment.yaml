@@ -7,7 +7,7 @@ Webdriver:
     DriverVersion: 113.0.5672.63
     OS: windows
 Environment:
-    Name: qa
+    Name: dev
     URL: https://uksddsc03hsta02.z33.web.core.windows.net
     URLDEMO: https://www.saucedemo.com/
 Timeouts:

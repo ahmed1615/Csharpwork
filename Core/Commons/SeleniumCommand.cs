@@ -1,4 +1,7 @@
-﻿using OpenQA.Selenium;
+﻿using MicroappPlatformQaAutomation.Core.Config;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.Events;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +12,21 @@ namespace MicroappPlatformQaAutomation.Core.Commons
 {
     public class SeleniumCommand
     {
-        private readonly IWebDriver _driver;
+        private readonly EventFiringWebDriver _driver;
+        private readonly WebDriverWait _wait;
+        private readonly TestConfiguration _config;
 
-        public SeleniumCommand(IWebDriver driver)
+        public SeleniumCommand(EventFiringWebDriver driver)
         {
             _driver = driver;
+            _config = ConfigurationReader.GetTestConfiguration();
+            _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(_config.Timeouts.ImplicitWaitTimeoutInSeconds));
         }
         public  void clickelement(IWebElement element) {
             try { 
                 if(element != null &element.Enabled) {
-                    element.Click();               }
+                    element.Click();              
+                }
             }
             catch(StaleElementReferenceException ex) { }
         }

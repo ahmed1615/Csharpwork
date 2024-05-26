@@ -24,10 +24,12 @@ namespace MicroappPlatformQaAutomation.Steps
         private readonly static string yamlDemoLoginTestDataFilePath = "Resources/TestData/DemoTestData.yaml";
         private readonly ExplicitWait _explicitWait;
         private readonly LoginPageDemo _LoginDemo;
-        public DemoLoginSteps( LoginPageDemo loginDemo, ExplicitWait explicitWait)
+        private readonly SeleniumCommand _sel;
+        public DemoLoginSteps( LoginPageDemo loginDemo, ExplicitWait explicitWait, SeleniumCommand sel)
         {
             _LoginDemo = loginDemo;
             _explicitWait = explicitWait;
+            _sel = sel;
         }
         [Given(@"the user fill username")]
         public void WhenTheUserFillUsername()
@@ -50,12 +52,13 @@ namespace MicroappPlatformQaAutomation.Steps
         [When(@"the user click on login button")]
         public void WhenTheUserClickOnLoginButton()
         {
-            try
+            _sel.clickelement(_LoginDemo.loginButton);
+            /* try
             {
                 _LoginDemo.loginButton.Click();
             }
             catch (StaleElementReferenceException e) { 
-            }
+            }*/
         }
 
      

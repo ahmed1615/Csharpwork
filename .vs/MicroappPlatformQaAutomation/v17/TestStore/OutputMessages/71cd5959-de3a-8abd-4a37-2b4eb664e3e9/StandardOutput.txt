@@ -1,0 +1,106 @@
+Printing url: 
+https://www.saucedemo.com/
+* Navigating to: https://www.saucedemo.com/
+Given the user fill username
+** Finding element: By.Id: user-name
+** Finding element completed
+* Changing element value: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.15)
+* Element value changed
+-> done: DemoLoginSteps.WhenTheUserFillUsername() (0.2s)
+When the user fill the password
+** Finding element: By.Id: password
+** Finding element completed
+* Changing element value: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.24)
+* Element value changed
+-> done: DemoLoginSteps.WhenTheUserFillThePassword() (0.1s)
+When the user click on login button
+** Finding element: By.XPath: //input[@type='submit']
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.29)
+* Element clicked
+-> done: DemoLoginSteps.WhenTheUserClickOnLoginButton() (0.3s)
+Then homepage should appear
+* Script executed
+** Finding element: By.XPath: //div[@class='app_logo']
+** Finding element completed
+-> done: DemoLoginSteps.ThenHomepageShouldAppear() (0.0s)
+When the user get all the product from A to Z and Z to A
+** Finding element: By.XPath: //div[@class='inventory_item_name ']
+** Finding element completed
+** Finding element: By.ClassName[Contains]: product_sort_container
+** Finding element completed
+** Finding element: By.XPath: .//option[normalize-space(.) = "Name (Z to A)"]
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.104)
+* Element clicked
+** Finding element: By.XPath: //div[@class='inventory_item_name ']
+** Finding element completed
+-> done: ProductsDemoSteps.the_user_get_all_the_product_from_A_to_Z_and_Z_to_A() (0.4s)
+When the user select product "Sauce Labs Backpack"
+** Finding element: By.XPath: //div[@class='inventory_item_description']
+** Finding element completed
+** Finding element: By.CssSelector: div[class='inventory_item_description'] a div
+** Finding element completed
+** Finding element: By.CssSelector: div[class='inventory_item_description'] a div
+** Finding element completed
+** Finding element: By.CssSelector: div[class='inventory_item_description'] a div
+** Finding element completed
+** Finding element: By.CssSelector: div[class='inventory_item_description'] a div
+** Finding element completed
+** Finding element: By.CssSelector: div[class='inventory_item_description'] a div
+** Finding element completed
+** Finding element: By.CssSelector: div[class='inventory_item_description'] a div
+** Finding element completed
+** Finding element: By.CssSelector: div[class='inventory_item_price']
+** Finding element completed
+$29.99
+** Finding element: By.CssSelector: div[class='inventory_item_description'] button
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.257)
+* Element clicked
+-> done: ProductsDemoSteps.the_user_select_product("Sauce Labs Backpack") (0.4s)
+When the user check the card
+** Finding element: By.Id: shopping_cart_container
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.88)
+* Element clicked
+** Finding element: By.XPath: //div[@class='inventory_item_price']
+** Finding element completed
+** Finding element: By.Id: checkout
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.352)
+* Element clicked
+** Finding element: By.Id: first-name
+** Finding element completed
+* Changing element value: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.412)
+* Element value changed
+** Finding element: By.Id: last-name
+** Finding element completed
+* Changing element value: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.418)
+* Element value changed
+** Finding element: By.Id: postal-code
+** Finding element completed
+* Changing element value: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.424)
+* Element value changed
+** Finding element: By.Id: continue
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.433)
+* Element clicked
+** Finding element: By.Id: finish
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.573)
+* Element clicked
+** Finding element: By.TagName: h2
+** Finding element completed
+-> done: ProductsDemoSteps.the_user_check_the_card() (1.3s)
+When the user wants to back to home
+** Finding element: By.Id: back-to-products
+** Finding element completed
+* Clicking on element: Element (id = f.1CE8DC2772BA9EBCF0936CC2D8E11891.d.0027CBDB1D04748D648DE87066F24F98.e.634)
+* Element clicked
+-> done: ProductsDemoSteps.the_userwants_to_back_to_home() (0.2s)
+Then homepage should appear
+* Script executed
+** Finding element: By.XPath: //div[@class='app_logo']
+** Finding element completed
+-> done: DemoLoginSteps.ThenHomepageShouldAppear() (0.0s)
